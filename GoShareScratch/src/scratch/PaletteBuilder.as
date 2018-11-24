@@ -20,11 +20,11 @@
 // PaletteBuilder.as
 // John Maloney, September 2010
 //
-// PaletteBuilder generates the contents of the blocks palette for a given
-// category, including the blocks, buttons, and watcher toggle boxes.
+// PaletteBuilder generates the contents of the com.goshare.blocks palette for a given
+// category, including the com.goshare.blocks, buttons, and watcher toggle boxes.
 
 package scratch {
-import blocks.*;
+import com.goshare.blocks.*;
 
 import extensions.*;
 
@@ -54,7 +54,7 @@ public class PaletteBuilder {
 
 	public static function strings():Array {
 		return [
-			'Stage selected:', 'No motion blocks',
+			'Stage selected:', 'No motion com.goshare.blocks',
 			'Make a Block', 'Make a List', 'Make a Variable',
 			'New List', 'List name', 'New Variable', 'Variable name',
 			'New Block', 'Add an Extension'];
@@ -71,13 +71,13 @@ public class PaletteBuilder {
 		var catName:String = Specs.categories[selectedCategory][1];
 		var catColor:int = Specs.blockColor(selectedCategory);
 		if (app.viewedObj() && app.viewedObj().isStage) {
-			// The stage has different blocks for some categories:
+			// The stage has different com.goshare.blocks for some categories:
 			var stageSpecific:Array = ['Control', 'Looks', 'Motion', 'Pen', 'Sensing'];
 			if (stageSpecific.indexOf(catName) != -1) selectedCategory += 100;
 			if (catName == 'Motion' || catName == 'GoShare') {
 				addItem(makeLabel(Translator.map('Stage selected:')));
 				nextY -= 6;
-				addItem(makeLabel(Translator.map('No motion blocks')));
+				addItem(makeLabel(Translator.map('No motion com.goshare.blocks')));
 				return;
 			}
 		}
@@ -125,9 +125,9 @@ public class PaletteBuilder {
 	}
 
 	private function showMyBlocksPalette(shiftKey:Boolean):void {
-		// show creation button, hat, and call blocks
+		// show creation button, hat, and call com.goshare.blocks
 		var catColor:int = Specs.blockColor(Specs.procedureColor);
-		addItem(new Button(Translator.map('Make a Block'), makeNewBlock, false, '/help/studio/tips/blocks/make-a-block/'));
+		addItem(new Button(Translator.map('Make a Block'), makeNewBlock, false, '/help/studio/tips/com.goshare.blocks/make-a-block/'));
 		var definitions:Array = app.viewedObj().procedureDefinitions();
 		if (definitions.length > 0) {
 			nextY += 5;
@@ -158,13 +158,13 @@ public class PaletteBuilder {
 	}
 
 	protected function addAddExtensionButton():void {
-		addItem(new Button(Translator.map('Add an Extension'), showAnExtension, false, '/help/studio/tips/blocks/add-an-extension/'));
+		addItem(new Button(Translator.map('Add an Extension'), showAnExtension, false, '/help/studio/tips/com.goshare.blocks/add-an-extension/'));
 	}
 
 	private function showDataCategory():void {
 		var catColor:int = Specs.variableColor;
 
-		// variable buttons, reporters, and set/change blocks
+		// variable buttons, reporters, and set/change com.goshare.blocks
 		addItem(new Button(Translator.map('Make a Variable'), makeVariable));
 		var varNames:Array = app.runtime.allVarNames().sort();
 		if (varNames.length > 0) {
@@ -391,7 +391,7 @@ public class PaletteBuilder {
 
 		var m:Menu = new Menu();
 		m.addItem(Translator.map('About') + ' ' + ext.displayName + ' ' + Translator.map('extension') + '...', showAbout, !!ext.url);
-		m.addItem('Remove extension blocks', hideExtension);
+		m.addItem('Remove extension com.goshare.blocks', hideExtension);
 
 		var extensionDevManager:ExtensionDevManager = Scratch.app.extensionManager as ExtensionDevManager;
 

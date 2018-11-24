@@ -19,7 +19,7 @@
 
 package util {
 	import flash.display.DisplayObject;
-	import blocks.*;
+	import com.goshare.blocks.*;
 	import interpreter.Variable;
 	import scratch.*;
 	import watchers.*;
@@ -171,7 +171,7 @@ public class OldProjectReader {
 		if (!(scripts[0] is Array)) return [];
 		var result:Array = [];
 		for each (var stack:Array in scripts) {
-			// stack is of form: [[x y] [blocks]]
+			// stack is of form: [[x y] [com.goshare.blocks]]
 			var a:Array = stack[1][0];
 			if (a && (a[0] == 'scratchComment')) continue; // skip comments
 			var topBlock:Block = BlockIO.arrayToStack(stack[1]);
@@ -186,7 +186,7 @@ public class OldProjectReader {
 		if (!(scripts[0] is Array)) return [];
 		var result:Array = [];
 		for each (var stack:Array in scripts) {
-			// stack is of form: [[x y] [blocks]]
+			// stack is of form: [[x y] [com.goshare.blocks]]
 			var a:Array = stack[1][0];
 			if (a && (a[0] != 'scratchComment')) continue; // skip non-comments
 			var blockID:int = a[4] ? a[4] : -1;
@@ -217,7 +217,7 @@ public class OldProjectReader {
 	}
 
 	private function oldAddAllBlocksTo(b:Block, blockList:Array):void {
-		// Recursively enumerate all blocks of the given stack in Squeak order
+		// Recursively enumerate all com.goshare.blocks of the given stack in Squeak order
 		// and add them to blockList. Block arguments are not included.
 		if (b.subStack2) oldAddAllBlocksTo(b.subStack2, blockList);
 		if (b.subStack1) oldAddAllBlocksTo(b.subStack1, blockList);
@@ -226,7 +226,7 @@ public class OldProjectReader {
 	}
 
 	private function newAddAllBlocksTo(b:Block, blockList:Array):void {
-		// Recursively enumerate all blocks of the given stack in Squeak order
+		// Recursively enumerate all com.goshare.blocks of the given stack in Squeak order
 		// and add them to blockList. Block arguments are not included.
 		blockList.push(b);
 		if (b.subStack1) newAddAllBlocksTo(b.subStack1, blockList);

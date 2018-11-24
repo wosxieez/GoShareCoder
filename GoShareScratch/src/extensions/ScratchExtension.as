@@ -29,7 +29,7 @@
 //	'r' - reporter block (returns a number or string)
 //	'R' - http reporter block that waits for the callback (returns a number or string)
 //	'b' - boolean reporter block
-//	'-' - (not actually a block) add some blank space between blocks
+//	'-' - (not actually a block) add some blank space between com.goshare.blocks
 //
 // Possible argument slots:
 //	'%n' - number argument slot

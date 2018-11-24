@@ -1026,7 +1026,7 @@ msgstr "拍摄照片当作角色"
 msgid "New sprite:"
 msgstr "新建角色："
 
-msgid "No motion blocks"
+msgid "No motion com.goshare.blocks"
 msgstr "没有运动类积木"
 
 msgid "No, Thanks"
@@ -1330,7 +1330,7 @@ msgid ""
 msgstr "允许Scratch自动发送使用情况信息给Scratch团队，帮助我们了解Scratch在全世界的使用情况。"
 
 msgid ""
-"The information we collect includes language selection, blocks usage, and "
+"The information we collect includes language selection, com.goshare.blocks usage, and "
 "some events like saving, loading, and uploading a project. We DO NOT collect"
 " any personal information. Please see our <a "
 "href='https://scratch.mit.edu/privacy_policy/'>Privacy Policy</a> for more "

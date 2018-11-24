@@ -486,10 +486,10 @@ public class GIFDecoder {
 		}
 
 		/**
-		 * Main file parser.  Reads GIF content blocks.
+		 * Main file parser.  Reads GIF content com.goshare.blocks.
 		 */
 		private function readContents():void {
-			// read GIF file content blocks
+			// read GIF file content com.goshare.blocks
 			var done:Boolean = false;
 
 			while (!(done || hasError())) {
@@ -686,7 +686,7 @@ public class GIFDecoder {
 		}
 
 		/**
-		 * Skips variable length blocks up to and including
+		 * Skips variable length com.goshare.blocks up to and including
 		 * next zero length block.
 		 */
 		private function skip():void {

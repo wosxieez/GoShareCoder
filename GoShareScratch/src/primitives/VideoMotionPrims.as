@@ -26,7 +26,7 @@ package primitives {
 	import flash.display.*;
 	import flash.geom.*;
 	import flash.utils.*;
-	import blocks.Block;
+	import com.goshare.blocks.Block;
 	import interpreter.*;
 	import scratch.*;
 

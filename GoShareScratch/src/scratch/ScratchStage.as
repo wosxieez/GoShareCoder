@@ -23,7 +23,7 @@
 // A Scratch stage object. Supports a drawing surface for the pen commands.
 
 package scratch {
-import blocks.BlockArg;
+import com.goshare.blocks.BlockArg;
 
 import flash.display.*;
 import flash.geom.*;
@@ -33,7 +33,7 @@ import flash.text.*;
 import flash.system.Capabilities;
 import flash.utils.ByteArray;
 import flash.net.FileReference;
-import blocks.Block;
+import com.goshare.blocks.Block;
 import filters.FilterPack;
 import translation.Translator;
 import uiwidgets.Menu;

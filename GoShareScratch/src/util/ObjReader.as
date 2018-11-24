@@ -47,7 +47,7 @@ package util {
 	import flash.errors.IOError;
 	import flash.geom.Rectangle;
 	import flash.utils.*;
-	import blocks.BlockArg;
+	import com.goshare.blocks.BlockArg;
 	import scratch.*;
 	import sound.*;
 	import watchers.*;

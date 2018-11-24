@@ -23,7 +23,7 @@ package ui {
 	import flash.filters.GlowFilter;
 	import flash.text.*;
 	import assets.Resources;
-	import blocks.Block;
+	import com.goshare.blocks.Block;
 	import scratch.*;
 	import translation.Translator;
 	import ui.media.MediaInfo;

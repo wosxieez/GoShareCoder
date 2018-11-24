@@ -22,7 +22,7 @@ package scratch {
 	import flash.events.MouseEvent;
 	import flash.geom.Point;
 	import flash.text.*;
-	import blocks.Block;
+	import com.goshare.blocks.Block;
 	import translation.*;
 	import uiwidgets.*;
 

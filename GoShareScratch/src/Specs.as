@@ -20,7 +20,7 @@
 // Specs.as
 // John Maloney, April 2010
 //
-// This file defines the command blocks and categories.
+// This file defines the command com.goshare.blocks and categories.
 // To add a new command:
 //		a. add a specification for the new command to the commands array
 //		b. add a primitive for the new command to the interpreter
@@ -361,12 +361,12 @@ package {
             ["show list %m.list",								" ", 12, "showList:"],
             ["hide list %m.list",								" ", 12, "hideList:"],
 
-            // obsolete blocks from Scratch 1.4 that may be used in older projects
+            // obsolete com.goshare.blocks from Scratch 1.4 that may be used in older projects
             ["play drum %n for %n beats",			" ", 98, "drum:duration:elapsed:from:", 1, 0.25], // Scratch 1.4 MIDI drum
             ["set instrument to %n",				" ", 98, "midiInstrument:", 1],
             ["loud?",								"b", 98, "isLoud"],
 
-            // obsolete blocks from Scratch 1.4 that are converted to new forms (so should never appear):
+            // obsolete com.goshare.blocks from Scratch 1.4 that are converted to new forms (so should never appear):
             ["abs %n",								"r", 98, "abs"],
             ["sqrt %n",								"r", 98, "sqrt"],
             ["stop script",							"f", 98, "doReturn"],
@@ -391,11 +391,11 @@ package {
             ["x scroll",							"r", 99, "xScroll"],
             ["y scroll",							"r", 99, "yScroll"],
 
-            // other obsolete blocks from alpha/beta
+            // other obsolete com.goshare.blocks from alpha/beta
             ["hide all sprites",					" ", 99, "hideAll"],
             ["user id",								"r", 99, "getUserId"],
 
-            // goshare blocks
+            // goshare com.goshare.blocks
             ["连接Gpip平台", " ", 13, "connectGpip:"],
             ["机器人移动 %n 步", " ", 13, "goShareMove:", 10],
             ["tts播报 %s %s %n", " ", 13, "goShareTTS:", '你好', 'aaa', 10],

@@ -1,5 +1,5 @@
 package uiwidgets {
-import blocks.*;
+import com.goshare.blocks.*;
 
 import flash.display.*;
 import flash.events.*;

@@ -23,7 +23,7 @@
 // List primitives.
 
 package primitives {
-	import blocks.Block;
+	import com.goshare.blocks.Block;
 	import interpreter.Interpreter;
 	import flash.utils.Dictionary;
 	import watchers.ListWatcher;

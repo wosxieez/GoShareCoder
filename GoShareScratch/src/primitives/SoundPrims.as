@@ -23,7 +23,7 @@
 // Sound primitives.
 
 package primitives {
-	import blocks.Block;
+	import com.goshare.blocks.Block;
 	import flash.utils.Dictionary;
 	import interpreter.*;
 	import scratch.*;

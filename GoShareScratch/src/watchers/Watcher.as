@@ -24,7 +24,7 @@
 // Represents a variable display.
 
 package watchers {
-import blocks.Block;
+import com.goshare.blocks.Block;
 
 import extensions.ExtensionManager;
 

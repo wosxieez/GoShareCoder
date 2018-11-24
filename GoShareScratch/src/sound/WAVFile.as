@@ -274,7 +274,7 @@ public class WAVFile {
 		var out:ByteArray = new ByteArray();
 		out.endian = Endian.LITTLE_ENDIAN;
 
-		// Round sample count up to integral an number of blocks
+		// Round sample count up to integral an number of com.goshare.blocks
 		var samplesPerBlock:int = (2 * (blockSize - 4)) + 1;
 		var blockCount:int = Math.floor(((sampleData.length / 2) + samplesPerBlock - 1) / samplesPerBlock);
 		var sampleCount:int = samplesPerBlock * blockCount;

@@ -23,7 +23,7 @@
 // This is the top-level application.
 
 package {
-    import blocks.Block;
+    import com.goshare.blocks.Block;
 
     import com.adobe.utils.StringUtil;
     import com.goshare.util.ScreenUtil;
@@ -759,7 +759,7 @@ public class Scratch extends Sprite {
         loadInProgress = false;
         saveNeeded = false;
 
-        // translate the blocks of the newly loaded project
+        // translate the com.goshare.blocks of the newly loaded project
         for each (var o:ScratchObj in stagePane.allObjects()) {
             o.updateScriptsAfterTranslation();
         }

@@ -20,7 +20,7 @@
 // ScriptsPane.as
 // John Maloney, August 2009
 //
-// A ScriptsPane is a working area that holds blocks and stacks. It supports the
+// A ScriptsPane is a working area that holds com.goshare.blocks and stacks. It supports the
 // logic that highlights possible drop targets as a block is being dragged and
 // decides what to do when the block is dropped.
 
@@ -28,7 +28,7 @@ package uiwidgets {
 	import flash.display.*;
 	import flash.events.MouseEvent;
 	import flash.geom.Point;
-	import blocks.*;
+	import com.goshare.blocks.*;
 	import scratch.*;
 	import flash.geom.Rectangle;
 	import ui.media.MediaInfo;
@@ -86,7 +86,7 @@ public class ScriptsPane extends ScrollFrameContents {
 	}
 
 	public function viewScriptsFor(obj:ScratchObj):void {
-		// View the blocks for the given object.
+		// View the com.goshare.blocks for the given object.
 		saveScripts(false);
 		while (numChildren > 0) {
 			var child:DisplayObject = removeChildAt(0);
@@ -112,7 +112,7 @@ public class ScriptsPane extends ScrollFrameContents {
 	}
 
 	public function saveScripts(saveNeeded:Boolean = true):void {
-		// Save the blocks in this pane in the viewed objects scripts list.
+		// Save the com.goshare.blocks in this pane in the viewed objects scripts list.
 		if (viewedObj == null) return;
 		viewedObj.scripts.splice(0); // remove all
 		viewedObj.scriptComments.splice(0); // remove all
@@ -300,7 +300,7 @@ return true; // xxx disable this check for now; it was causing confusion at Scra
 			if (!target.isTerminal && (!endsWithTerminal || target.nextBlock == null)) {
 				// insert stack after target block:
 				// target block must not be a terminal
-				// if stack does not end with a terminal, it can be inserted between blocks
+				// if stack does not end with a terminal, it can be inserted between com.goshare.blocks
 				// otherwise, it can only inserted after the final block of the substack
 				p = target.localToGlobal(new Point(0, target.base.nextBlockY() - 3));
 				possibleTargets.push([p, target, INSERT_NORMAL]);
@@ -518,7 +518,7 @@ return true; // xxx disable this check for now; it was causing confusion at Scra
 	/* Stack cleanup */
 
 	private function cleanUp():void {
-		// Clean up the layout of stacks and blocks in the scripts pane.
+		// Clean up the layout of stacks and com.goshare.blocks in the scripts pane.
 		// Steps:
 		//	1. Collect stacks and sort by x
 		//	2. Assign stacks to columns such that the y-ranges of all stacks in a column do not overlap

@@ -26,7 +26,7 @@ package primitives {
 	import flash.display.*;
 	import flash.geom.*;
 	import flash.utils.Dictionary;
-	import blocks.Block;
+	import com.goshare.blocks.Block;
 	import interpreter.*;
 	import scratch.*;
 
@@ -256,7 +256,7 @@ public class SensingPrims {
 			if ('size' == attribute) return s.getSize();
 			if ('volume' == attribute) return s.volume;
 		} if (obj is ScratchStage) {
-			if ('background #' == attribute) return obj.costumeNumber(); // support for old 1.4 blocks
+			if ('background #' == attribute) return obj.costumeNumber(); // support for old 1.4 com.goshare.blocks
 			if ('backdrop #' == attribute) return obj.costumeNumber();
 			if ('backdrop name' == attribute) return obj.currentCostume().costumeName;
 			if ('volume' == attribute) return obj.volume;

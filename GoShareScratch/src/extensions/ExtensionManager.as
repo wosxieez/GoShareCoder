@@ -24,7 +24,7 @@
 // socket-based communications with local and server-based extension helper applications.
 
 package extensions {
-import blocks.Block;
+import com.goshare.blocks.Block;
 
 import com.adobe.utils.StringUtil;
 
@@ -90,7 +90,7 @@ public class ExtensionManager {
 	// Should the interpreter force async communication with extensions?
 	// For example, should 'r' be treated as 'R'?
 	public function shouldForceAsync(op:String):Boolean {
-		// Non-extension blocks shouldn't be forceAsync
+		// Non-extension com.goshare.blocks shouldn't be forceAsync
 		var extensionName:String = unpackExtensionName(op);
 		if (!extensionName) return false;
 

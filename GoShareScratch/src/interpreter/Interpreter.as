@@ -21,10 +21,10 @@
 // John Maloney, August 2009
 // Revised, March 2010
 //
-// A simple yet efficient interpreter for blocks.
+// A simple yet efficient interpreter for com.goshare.blocks.
 //
 // Interpreters may seem mysterious, but this one is quite straightforward. Since every
-// block knows which block (if any) follows it in a sequence of blocks, the interpreter
+// block knows which block (if any) follows it in a sequence of com.goshare.blocks, the interpreter
 // simply executes the current block, then asks that block for the next block. The heart
 // of the interpreter is the evalCmd() function, which looks up the opcode string in a
 // dictionary (initialized by initPrims()) then calls the primitive function for that opcode.
@@ -38,7 +38,7 @@
 // control. It returns control earlier if either (a) there are are no more threads to run
 // or (b) some thread does a command that has a visible effect (e.g. "move 10 steps").
 //
-// To add a command to the interpreter, just add a new case to initPrims(). Command blocks
+// To add a command to the interpreter, just add a new case to initPrims(). Command com.goshare.blocks
 // usually perform some operation and return null, while reporters must return a value.
 // Control structures are a little tricky; look at some of the existing control structure
 // commands to get a sense of what to do.
@@ -56,7 +56,7 @@
 // Delay times are rounded to milliseconds, and the minimum delay is a millisecond.
 
 package interpreter {
-import blocks.*;
+import com.goshare.blocks.*;
 
 import extensions.ExtensionManager;
 
@@ -504,7 +504,7 @@ public class Interpreter {
 		primTable[Specs.CHANGE_VAR]		= primVarChange;
 		primTable[Specs.GET_PARAM]		= primGetParam;
 
-		// edge-trigger hat blocks
+		// edge-trigger hat com.goshare.blocks
 		primTable["whenDistanceLessThan"]	= primNoop;
 		primTable["whenSensorConnected"]	= primNoop;
 		primTable["whenSensorGreaterThan"]	= primNoop;

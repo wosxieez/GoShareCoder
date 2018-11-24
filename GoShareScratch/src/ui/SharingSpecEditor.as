@@ -24,7 +24,7 @@ package ui {
 	import flash.text.*;
 	import flash.net.*;
 	import assets.Resources;
-	import blocks.*;
+	import com.goshare.blocks.*;
 	import uiwidgets.*;
 	import util.*;
 	import translation.Translator;

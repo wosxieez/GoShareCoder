@@ -24,7 +24,7 @@
 // containing the variables and methods common to both.
 
 package scratch {
-	import blocks.*;
+	import com.goshare.blocks.*;
 
 	import filters.FilterPack;
 

@@ -1023,7 +1023,7 @@ msgstr "用攝影裝置錄製新角色"
 msgid "New sprite:"
 msgstr "新的角色："
 
-msgid "No motion blocks"
+msgid "No motion com.goshare.blocks"
 msgstr "無可用的動作積木"
 
 msgid "No, Thanks"
@@ -1329,7 +1329,7 @@ msgstr ""
 "Scratch 團隊。"
 
 msgid ""
-"The information we collect includes language selection, blocks usage, and "
+"The information we collect includes language selection, com.goshare.blocks usage, and "
 "some events like saving, loading, and uploading a project. We DO NOT collect"
 " any personal information. Please see our <a "
 "href='https://scratch.mit.edu/privacy_policy/'>Privacy Policy</a> for more "

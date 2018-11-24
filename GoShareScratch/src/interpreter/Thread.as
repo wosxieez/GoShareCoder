@@ -25,7 +25,7 @@
 // a stack to support nested control structures and procedure calls.
 
 package interpreter {
-	import blocks.Block;
+	import com.goshare.blocks.Block;
 
 public class Thread {
 
@@ -138,7 +138,7 @@ public class Thread {
 
 }}
 
-import blocks.*;
+import com.goshare.blocks.*;
 import interpreter.*;
 
 class StackFrame {

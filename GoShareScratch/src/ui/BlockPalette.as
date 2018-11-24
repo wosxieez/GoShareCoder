@@ -20,13 +20,13 @@
 // BlockPalette.as
 // John Maloney, August 2009
 //
-// A BlockPalette holds the blocks for the selected category.
+// A BlockPalette holds the com.goshare.blocks for the selected category.
 // The mouse handling code detects when a Block's parent is a BlocksPalette and
 // creates a copy of that block when it is dragged out of the palette.
 
 package ui {
 	import flash.geom.*;
-	import blocks.Block;
+	import com.goshare.blocks.Block;
 	import interpreter.Interpreter;
 	import uiwidgets.*;
 	import scratch.ScratchObj;
@@ -53,7 +53,7 @@ public class BlockPalette extends ScrollFrameContents {
 	}
 
 	public function handleDrop(obj:*):Boolean {
-		// Delete blocks and stacks dropped onto the palette.
+		// Delete com.goshare.blocks and stacks dropped onto the palette.
 		var c:ScratchComment = obj as ScratchComment;
 		if (c) {
 			c.x = c.y = 20; // position for undelete

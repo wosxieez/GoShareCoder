@@ -22,7 +22,7 @@
 //
 // PaletteSelector is a UI widget that holds set of PaletteSelectorItems
 // and supports changing the selected category. When the category is changed,
-// the blocks palette is filled with the blocks for the selected category.
+// the com.goshare.blocks palette is filled with the com.goshare.blocks for the selected category.
 
 package ui {
 	import flash.display.*;

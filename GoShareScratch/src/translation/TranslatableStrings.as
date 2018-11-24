@@ -91,7 +91,7 @@ public class TranslatableStrings {
 		var data:String = '';
 		keys.sort(Array.CASEINSENSITIVE);
 		for each (var k:String in keys) {
-			data += "\t  '" + dict[k] + "': '/help/studio/tips/blocks/FILENAME',\n";
+			data += "\t  '" + dict[k] + "': '/help/studio/tips/com.goshare.blocks/FILENAME',\n";
 		}
 		new FileReference().save(data, 'helpScreens.txt');
 	}

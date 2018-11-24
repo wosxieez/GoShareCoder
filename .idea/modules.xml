@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/GoShareScratch/GoShareScratch.iml" filepath="$PROJECT_DIR$/GoShareScratch/GoShareScratch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sb2Demo/sb2Demo.iml" filepath="$PROJECT_DIR$/Sb2Demo/sb2Demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sb2Player/sb2Player.iml" filepath="$PROJECT_DIR$/Sb2Player/sb2Player.iml" />
     </modules>
   </component>
 </project>

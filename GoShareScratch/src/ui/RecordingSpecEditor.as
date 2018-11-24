@@ -23,7 +23,7 @@ package ui {
 	import flash.geom.*;
 	import flash.text.*;
 	import assets.Resources;
-	import blocks.*;
+	import com.goshare.blocks.*;
 	import uiwidgets.*;
 	import util.*;
 	import translation.Translator;

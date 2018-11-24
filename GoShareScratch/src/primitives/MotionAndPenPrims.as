@@ -23,7 +23,7 @@
 // Scratch motion and pen primitives.
 
 package primitives {
-	import blocks.*;
+	import com.goshare.blocks.*;
 
 	import flash.display.*;
 	import flash.geom.*;

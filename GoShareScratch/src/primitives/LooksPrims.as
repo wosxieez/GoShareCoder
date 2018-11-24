@@ -24,7 +24,7 @@
 
 package primitives {
 	import flash.utils.Dictionary;
-	import blocks.*;
+	import com.goshare.blocks.*;
 	import interpreter.*;
 	import scratch.*;
 

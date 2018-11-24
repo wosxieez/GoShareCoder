@@ -32,7 +32,7 @@ package ui.media {
 	import flash.net.*;
 	import flash.text.*;
 	import assets.Resources;
-	import blocks.*;
+	import com.goshare.blocks.*;
 	import scratch.*;
 	import translation.Translator;
 	import ui.parts.*;
@@ -86,7 +86,7 @@ public class MediaInfo extends Sprite {
 			objName = mysprite.objName;
 			md5 = null; // initially null
 		} else if ((obj is Block) || (obj is Array)) {
-			// scripts holds an array of blocks, stacks, and comments in Array form
+			// scripts holds an array of com.goshare.blocks, stacks, and comments in Array form
 			// initialize script list from either a stack (Block) or an array of stacks already in array form
 			objType = 'script';
 			objName = '';

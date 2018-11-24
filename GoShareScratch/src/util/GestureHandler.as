@@ -52,7 +52,7 @@ package util {
 	import flash.filters.*;
 	import flash.geom.*;
 	import flash.text.*;
-	import blocks.*;
+	import com.goshare.blocks.*;
 	import scratch.*;
 	import uiwidgets.*;
 	import svgeditor.*;

@@ -18,7 +18,7 @@
  */
 
 package scratch {
-import blocks.*;
+import com.goshare.blocks.*;
 
 import extensions.ExtensionManager;
 
@@ -551,7 +551,7 @@ public class BlockMenus implements DragClient {
 		showMenu(m);
 	}
 
-	// ***** Procedure menu (for procedure definition hats and call blocks) *****
+	// ***** Procedure menu (for procedure definition hats and call com.goshare.blocks) *****
 
 	private function procMenu(evt:MouseEvent):void {
 		var m:Menu = new Menu(null, 'proc');

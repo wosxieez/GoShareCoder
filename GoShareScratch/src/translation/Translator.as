@@ -18,7 +18,7 @@
  */
 
 package translation {
-import blocks.Block;
+import com.goshare.blocks.Block;
 
 import flash.events.Event;
 import flash.net.*;

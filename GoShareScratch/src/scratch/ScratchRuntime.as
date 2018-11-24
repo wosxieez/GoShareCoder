@@ -23,8 +23,8 @@
 package scratch {
 import assets.Resources;
 
-import blocks.Block;
-import blocks.BlockArg;
+import com.goshare.blocks.Block;
+import com.goshare.blocks.BlockArg;
 
 import extensions.ExtensionManager;
 
@@ -66,7 +66,7 @@ import watchers.*;
 public class ScratchRuntime {
 
 	// Scratch uses these pseudo-Unicode values to map arrow keys as if they were printable characters.
-	// Changing these values may break compatibility with existing projects using "hacked" keypress blocks.
+	// Changing these values may break compatibility with existing projects using "hacked" keypress com.goshare.blocks.
 	private static const SCRATCH_ARROW_LEFT:int = 28; // file separator
 	private static const SCRATCH_ARROW_RIGHT:int = 29; // record separator
 	private static const SCRATCH_ARROW_UP:int = 30; // group separator
@@ -1084,7 +1084,7 @@ public class ScratchRuntime {
 	public function makeListWatcher():ListWatcher { return new ListWatcher(); }
 
 	private function updateVarRefs(oldName:String, newName:String, owner:ScratchObj):void {
-		// Change the variable name in all blocks that use it.
+		// Change the variable name in all com.goshare.blocks that use it.
 		for each (var b:Block in allUsesOfVariable(oldName, owner)) {
 			if (b.op == Specs.GET_VAR) {
 				b.setSpec(newName);
@@ -1540,7 +1540,7 @@ public class ScratchRuntime {
 	// Undelete support
 	//------------------------------
 
-	private var lastDelete:Array; // object, x, y, owner (for blocks/stacks/costumes/sounds)
+	private var lastDelete:Array; // object, x, y, owner (for com.goshare.blocks/stacks/costumes/sounds)
 
 	public function canUndelete():Boolean { return lastDelete != null }
 	public function clearLastDelete():void { lastDelete = null }
